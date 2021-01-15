@@ -1,3 +1,5 @@
+    from scipy import stats
+    
     def Bartels(datas):
         datas = pd.Series(datas[0:100])
         n = len(datas.values)
@@ -5,7 +7,7 @@
             print("n >= 100 required")
             return (None, None)
         else:
-            R = pd.Series(range(0, len(datas)))
+            R = pd.Series(stats.rankdata(datas))
             m = np.sum(R.values) / len(R.values)
             t1 = R[1:(n - 1)]
             t2 = R[2:n]
