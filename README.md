@@ -1,6 +1,8 @@
 # finance-stats
 
-Bartels (1982) test in Python for n >= 100
+*Bartels (1982)*
+
+Statistical test in Python for n >= 100
 
 The ranks r[1], ..., r[n] of the X[i], ..., X[n] are used for the statistic:
 
